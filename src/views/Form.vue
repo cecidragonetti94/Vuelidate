@@ -17,13 +17,6 @@
           <b-form-select v-model="select" :options="animales"></b-form-select>
           <small>{{select}} </small>
         </b-col>
-        <b-col md="3"> 
-             <b-form-group>
-      <b-form-radio-group v-model="radio" :options="animalesRadio">
-        </b-form-radio-group>
-    </b-form-group>
-          
-        </b-col>
       </b-row>
     </form>
   </div>
@@ -39,12 +32,6 @@ export default {
       radio: null,
       animales: [
           {value: null,text:'seleccione un animal'},
-          {value: 'perro',text:'Guau guau'},
-          {value: 'gato',text:'miaaauu'},
-          {value: 'tortuga',text:'puuff'}
-
-      ],
-      radioAnimales: [
           {value: 'perro',text:'Guau guau'},
           {value: 'gato',text:'miaaauu'},
           {value: 'tortuga',text:'puuff'}
